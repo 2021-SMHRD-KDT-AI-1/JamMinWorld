@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".randomquiz">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloud" />
+
+    <Button
+        android:id="@+id/random_out"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:foreground="@drawable/house"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/bunggrae_bold"
+        android:text="랜덤퀴즈"
+        android:textColor="#656363"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/random_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/bunggrae_bold"
+        android:text=" / 10"
+        android:textColor="#656363"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cnt_num"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageView
+        android:id="@+id/random_img"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/random_btn1"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bunggrae_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textColor="#656363"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/random_img"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/random_img"
+        app:layout_constraintTop_toBottomOf="@+id/random_img" />
+
+    <Button
+        android:id="@+id/random_btn2"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bunggrae_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textColor="#656363"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/random_btn1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/random_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/random_btn1" />
+
+    <Button
+        android:id="@+id/random_btn3"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bunggrae_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textColor="#656363"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/random_btn2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/random_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/random_btn2" />
+
+    <Button
+        android:id="@+id/random_btn4"
+        android:layout_width="280sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:fontFamily="@font/bunggrae_bold"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textColor="#656363"
+        android:textSize="20sp"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/random_btn3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/random_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/random_btn3" />
+
+    <TextView
+        android:id="@+id/cnt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/bunggrae_bold"
+        android:textColor="#656363"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/random_page"
+        app:layout_constraintEnd_toStartOf="@+id/random_page"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="326dp"
+        android:layout_height="211dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425">
+
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bunggrae_bold"
+            android:text="GAME OVER"
+            android:textColor="#656363"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.29" />
+
+        <Button
+            android:id="@+id/btn_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#FFEB3B"
+            android:fontFamily="@font/bunggrae_bold"
+            android:text="오답노트"
+            android:textColor="#656363"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_back1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#FFEB3B"
+            android:fontFamily="@font/bunggrae_bold"
+            android:text="다시하기"
+            android:textColor="#656363"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_note"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
